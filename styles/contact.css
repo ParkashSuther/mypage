@@ -1,0 +1,84 @@
+  body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+#contectform{
+	text-align: center; 
+	background-color: #3498DB;
+	color: white;
+	font-family: fantasy;
+	padding: 30px;
+	margin-top: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contectform {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.flex-container{
+	display: flex;
+	flex-wrap: nowrap;
+	/*background-color: #EAECEE;*/
+	margin-top: 50px;
+	justify-content: center;	
+}
+
+.flex-container >div{
+	background-color: white;
+	width: 250px;
+	margin: 10px;
+	text-align: center;
+	font-size: 30px;
+}
+.flex-container >div:hover{
+	/*background-color: black;*/
+  border:1px solid black;
+	width: 250px;
+	margin: 10px;
+	text-align: center;
+	font-size: 30px;
+}
+.flex-container>div>img{
+	width: 200px;
+	height: 70px;
+}
+@media only screen and (max-width :700px) {
+  .flex-container >div{
+  	width: auto;
+  }
+  .flex-container{
+  	flex-direction: column;	
+  }
+}
+@media only screen and (min-width :701px) {
+    .contectform{
+      margin-top: 30px;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+}
